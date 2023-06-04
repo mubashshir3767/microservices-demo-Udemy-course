@@ -21,6 +21,7 @@
         <module>kafka/kafka-producer</module>
         <module>common-config</module>
         <module>twitter.to.kafka.service</module>
+        <module>config-server</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -34,6 +35,9 @@
         <spring-retry.version>2.0.1</spring-retry.version>
         <kafka-avro-serializer.version>5.3.0</kafka-avro-serializer.version>
         <spring-boot-starter-aop.version>2.5.2</spring-boot-starter-aop.version>
+        <spring-cloud-config-server.version>4.0.3</spring-cloud-config-server.version>
+        <spring-cloud-dependencies.version>2022.0.3</spring-cloud-dependencies.version>
+<!--        <spring-boot-autoconfigure.version>3.1.0</spring-boot-autoconfigure.version>-->
     </properties>
 
     <repositories>
@@ -94,6 +98,36 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring-boot.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
+                <version>${spring-cloud-config-server.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-config -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-config</artifactId>
+                <version>${spring-cloud-config-server.version}</version>
+            </dependency>
+
+            <!--            &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-autoconfigure &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-autoconfigure</artifactId>-->
+<!--                <version>${spring-boot-autoconfigure.version}</version>-->
+<!--            </dependency>-->
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-stream -->
