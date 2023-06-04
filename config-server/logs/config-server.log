@@ -355,3 +355,43 @@ Caused by: org.eclipse.jgit.api.errors.RefNotFoundException: Ref main cannot be 
 2023-06-05 02:08:11 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Will try to refresh master label instead.
 2023-06-05 02:08:13 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\99890\AppData\Local\Temp\config-repo-3364087888332604962\config-client-twitter_to_kafka.yml]' via location 'file:/C:/Users/99890/AppData/Local/Temp/config-repo-3364087888332604962/'
 2023-06-05 02:08:13 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\99890\AppData\Local\Temp\config-repo-3364087888332604962\config-client.yml]' via location 'file:/C:/Users/99890/AppData/Local/Temp/config-repo-3364087888332604962/'
+2023-06-05 02:38:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-05 02:38:57 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-06-05 02:38:58 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=28d2956b-a695-3014-9b25-79a98ba94534
+2023-06-05 02:38:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-06-05 02:38:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-06-05 02:38:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-05 02:38:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 02:38:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-05 02:38:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+2023-06-05 02:38:59 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c9a3661, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@727986ad, org.springframework.security.web.context.SecurityContextHolderFilter@6c8f4bc7, org.springframework.security.web.header.HeaderWriterFilter@687eb455, org.springframework.security.web.csrf.CsrfFilter@37d699a1, org.springframework.security.web.authentication.logout.LogoutFilter@3751acd7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bf4680c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20ffb8d5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1600a8a2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57b9389f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28989415, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1132baa3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b25ef1c, org.springframework.security.web.access.ExceptionTranslationFilter@1b17d8ab, org.springframework.security.web.access.intercept.AuthorizationFilter@eaf8427]
+2023-06-05 02:39:04 [main] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not checkout default label main
+org.eclipse.jgit.api.errors.RefNotFoundException: Ref main cannot be resolved
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:224)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.checkout(JGitEnvironmentRepository.java:467)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.checkoutDefaultBranchWithRetry(JGitEnvironmentRepository.java:392)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:379)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:283)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:71)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+2023-06-05 02:39:04 [main] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Will try to checkout master label instead.
+2023-06-05 02:39:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-06-05 02:39:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-06-05 02:39:04 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 9.143 seconds (process running for 11.079)
