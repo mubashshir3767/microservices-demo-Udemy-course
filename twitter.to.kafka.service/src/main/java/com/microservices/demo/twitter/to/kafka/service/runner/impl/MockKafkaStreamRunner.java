@@ -40,7 +40,13 @@ public class MockKafkaStreamRunner implements StreamRunner {
          "LOREMa",
          "LOREMaa",
          "LOREMsasd",
-
+         "LOREMsasd1",
+         "LOREMsasd2",
+         "LOREMsasd3",
+         "LOREMsasd4",
+         "LOREMsasd5",
+         "LOREMsasd6",
+         "LOREMsasd7",
      };
 
      private static final String tweetAsRawJson = "{" +
