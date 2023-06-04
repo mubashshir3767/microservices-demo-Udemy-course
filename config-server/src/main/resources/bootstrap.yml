@@ -6,8 +6,11 @@ spring:
       server:
         git:
           uri: https://github.com/mubashshir3767/spring-cloud-config-server-repository
-          default-label: main
           username: mubashshir3767
-          password: mubashshir9090
+          password: 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
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
