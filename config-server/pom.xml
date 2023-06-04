@@ -9,27 +9,31 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>app-config-data</artifactId>
+    <groupId>org.example</groupId>
+    <artifactId>config-server</artifactId>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
         <dependency>
+            <groupId>com.microservices-demo</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-android</artifactId>
-            <version>1.7.36</version>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
     </dependencies>
 </project>

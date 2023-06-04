@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    root: INFO
+    org.spring.framework.cloud.config: DEBUG
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mubashshir3767/microservices-demo-udemy-course-spring-cloud-config-server-repository
+          default-label: main
+          username: mubashshir3767
+          password: mubashshir9090
+          clone-on-start: true
+    fail-fast: true
