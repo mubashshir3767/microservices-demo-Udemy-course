@@ -5,12 +5,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/mubashshir3767/spring-cloud-config-server-repository
-          username: mubashshir3767
-          password: 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
+          uri: C:\Users\99890\Desktop\microservices-demo\config-server-repository
+#          uri: https://github.com/mubashshir3767/spring-cloud-config-server-repository.git
+#          username: mubashshir3767
+#          password: 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
           clone-on-start: true
     fail-fast: true
-  security:
-    user:
-      name: spring_cloud_user
-      password: springCloud_Pwd!
+#  security:
+#    user:
+#      name: spring_cloud_user
+#      password: springCloud_Pwd!

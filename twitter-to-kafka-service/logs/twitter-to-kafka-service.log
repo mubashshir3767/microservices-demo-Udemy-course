@@ -1,0 +1,312 @@
+2023-06-05 15:26:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService using Java 19.0.2 with PID 2680 (C:\Users\99890\Desktop\microservices-demo\twitter.to.kafka.service\target\classes started by 99890 in C:\Users\99890\Desktop\microservices-demo)
+2023-06-05 15:26:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - The following 1 profile is active: "twitter_to_kafka"
+2023-06-05 15:26:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-06-05 15:26:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=twitter-to-kafka-service,config-client, profiles=[default], label=null, version=9c96337a6b9a4428d564b3a54db17a639290a8d0, state=null
+2023-06-05 15:26:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-06-05 15:26:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=9c96337a6b9a4428d564b3a54db17a639290a8d0, state=null
+2023-06-05 15:26:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-06-05 15:26:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=twitter-to-kafka-service,config-client, profiles=[default], label=null, version=9c96337a6b9a4428d564b3a54db17a639290a8d0, state=null
+2023-06-05 15:26:58 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5ae69c34-bbfb-32af-8fd7-3ae5d323e196
+2023-06-05 15:26:58 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-06-05 15:26:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-06-05 15:26:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-06-05 15:26:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1685960818786
+2023-06-05 15:26:59 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: bb4d61f8-dc17-4760-b089-bde2c1b36aa6
+
+2023-06-05 15:27:00 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2023-06-05 15:27:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 4.833 seconds (process running for 6.192)
+2023-06-05 15:27:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaService - app starts... 
+2023-06-05 15:27:00 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2023-06-05 15:27:00 [main] INFO  c.m.d.k.a.c.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2023-06-05 15:27:02 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2023-06-05 15:27:02 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMaa amet massa massa Kafka sit LOREMa cosectuter
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2403514908692661005, "text": "LOREMaa amet massa massa Kafka sit LOREMa cosectuter", "createdAt": 1685960822000}' to topic='twitter-topic'
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8089]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-06-05 15:27:02 [pool-4-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1685960822734
+2023-06-05 15:27:02 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: TpuHFDKoRVGi6DBor6U3mw
+2023-06-05 15:27:02 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 18000 with epoch 0
+2023-06-05 15:27:04 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMa LOREM fucce cosectuter LOREM massa LOREMsasd Kafka sit massa sit ipsum LOREMaa
+2023-06-05 15:27:04 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 9111166799129524508, "text": "LOREMa LOREM fucce cosectuter LOREM massa LOREMsasd Kafka sit massa sit ipsum LOREMaa", "createdAt": 1685960824000}' to topic='twitter-topic'
+2023-06-05 15:27:05 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor LOREMa ipsum LOREMa Elasticsearch sit amet
+2023-06-05 15:27:05 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 626107258564746868, "text": "dolor LOREMa ipsum LOREMa Elasticsearch sit amet", "createdAt": 1685960825000}' to topic='twitter-topic'
+2023-06-05 15:27:06 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMa sit ipsum fucce fucce LOREMaa Java fucce fucce LOREMa massa
+2023-06-05 15:27:06 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 1306223606884424965, "text": "LOREMa sit ipsum fucce fucce LOREMaa Java fucce fucce LOREMa massa", "createdAt": 1685960826000}' to topic='twitter-topic'
+2023-06-05 15:27:07 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text fucce amet LOREMa sit amet ipsum cosectuter Kafka LOREMsasd dolor LOREM LOREM sit ipsum
+2023-06-05 15:27:07 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 868278850674957808, "text": "fucce amet LOREMa sit amet ipsum cosectuter Kafka LOREMsasd dolor LOREM LOREM sit ipsum", "createdAt": 1685960827000}' to topic='twitter-topic'
+2023-06-05 15:27:08 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREM ipsum LOREMa LOREMaa Kafka LOREMsasd cosectuter
+2023-06-05 15:27:08 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2505741680291330964, "text": "LOREM ipsum LOREMa LOREMaa Kafka LOREMsasd cosectuter", "createdAt": 1685960828000}' to topic='twitter-topic'
+2023-06-05 15:27:09 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet massa amet cosectuter LOREMsasd amet amet LOREMsasd Java amet sit cosectuter LOREM LOREMaa cosectuter
+2023-06-05 15:27:09 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 8271644841589028655, "text": "amet massa amet cosectuter LOREMsasd amet amet LOREMsasd Java amet sit cosectuter LOREM LOREMaa cosectuter", "createdAt": 1685960829000}' to topic='twitter-topic'
+2023-06-05 15:27:10 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit LOREMsasd LOREM Spring LOREMa sit
+2023-06-05 15:27:10 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7612980809270307669, "text": "sit LOREMsasd LOREM Spring LOREMa sit", "createdAt": 1685960830000}' to topic='twitter-topic'
+2023-06-05 15:27:11 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text fucce cosectuter ipsum ipsum LOREMaa ipsum fucce Java dolor massa ipsum LOREMaa LOREM LOREMa
+2023-06-05 15:27:11 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6217028169818582163, "text": "fucce cosectuter ipsum ipsum LOREMaa ipsum fucce Java dolor massa ipsum LOREMaa LOREM LOREMa", "createdAt": 1685960831000}' to topic='twitter-topic'
+2023-06-05 15:27:12 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa amet dolor sit dolor massa LOREMaa LOREM Microservices fucce sit ipsum LOREM fucce amet LOREM
+2023-06-05 15:27:12 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 267600442784132600, "text": "massa amet dolor sit dolor massa LOREMaa LOREM Microservices fucce sit ipsum LOREM fucce amet LOREM", "createdAt": 1685960832000}' to topic='twitter-topic'
+2023-06-05 15:27:13 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa cosectuter ipsum LOREM dolor LOREM Elasticsearch amet cosectuter massa LOREMsasd LOREMa
+2023-06-05 15:27:13 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 3506025337814702462, "text": "massa cosectuter ipsum LOREM dolor LOREM Elasticsearch amet cosectuter massa LOREMsasd LOREMa", "createdAt": 1685960833000}' to topic='twitter-topic'
+2023-06-05 15:27:14 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor massa dolor cosectuter fucce Elasticsearch dolor dolor LOREMa
+2023-06-05 15:27:14 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7513583989923641443, "text": "dolor massa dolor cosectuter fucce Elasticsearch dolor dolor LOREMa", "createdAt": 1685960834000}' to topic='twitter-topic'
+2023-06-05 15:27:15 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit cosectuter LOREMa dolor LOREMa LOREMsasd ipsum LOREMaa Kafka amet amet sit fucce LOREMsasd sit
+2023-06-05 15:27:15 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6749796787192149396, "text": "sit cosectuter LOREMa dolor LOREMa LOREMsasd ipsum LOREMaa Kafka amet amet sit fucce LOREMsasd sit", "createdAt": 1685960835000}' to topic='twitter-topic'
+2023-06-05 15:27:16 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor LOREMaa LOREMsasd LOREMa amet ipsum Spring cosectuter amet ipsum ipsum LOREMsasd
+2023-06-05 15:27:16 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6475085099389700333, "text": "dolor LOREMaa LOREMsasd LOREMa amet ipsum Spring cosectuter amet ipsum ipsum LOREMsasd", "createdAt": 1685960836000}' to topic='twitter-topic'
+2023-06-05 15:27:17 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit LOREM LOREMsasd LOREMsasd LOREMsasd Java massa cosectuter cosectuter
+2023-06-05 15:27:17 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6445166878389895302, "text": "sit LOREM LOREMsasd LOREMsasd LOREMsasd Java massa cosectuter cosectuter", "createdAt": 1685960837000}' to topic='twitter-topic'
+2023-06-05 15:27:18 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMsasd massa massa LOREM Kafka amet LOREMa
+2023-06-05 15:27:18 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 1485922599411994579, "text": "LOREMsasd massa massa LOREM Kafka amet LOREMa", "createdAt": 1685960838000}' to topic='twitter-topic'
+2023-06-05 15:27:19 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet cosectuter LOREMa fucce Spring LOREM LOREM
+2023-06-05 15:27:19 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 3419139394808858127, "text": "amet cosectuter LOREMa fucce Spring LOREM LOREM", "createdAt": 1685960839000}' to topic='twitter-topic'
+2023-06-05 15:27:20 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text cosectuter ipsum amet ipsum sit Elasticsearch ipsum dolor sit
+2023-06-05 15:27:20 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 1676685759647366042, "text": "cosectuter ipsum amet ipsum sit Elasticsearch ipsum dolor sit", "createdAt": 1685960840000}' to topic='twitter-topic'
+2023-06-05 15:27:22 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMsasd sit amet dolor amet LOREM Java amet massa LOREMa massa
+2023-06-05 15:27:22 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7777717317258001220, "text": "LOREMsasd sit amet dolor amet LOREM Java amet massa LOREMa massa", "createdAt": 1685960841000}' to topic='twitter-topic'
+2023-06-05 15:27:23 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit LOREM LOREMsasd Kafka massa LOREM
+2023-06-05 15:27:23 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 8223708425230279385, "text": "sit LOREM LOREMsasd Kafka massa LOREM", "createdAt": 1685960843000}' to topic='twitter-topic'
+2023-06-05 15:27:24 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMsasd LOREM cosectuter LOREMaa LOREMsasd LOREMsasd fucce amet Microservices sit LOREMa sit LOREMaa cosectuter sit LOREMa
+2023-06-05 15:27:24 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 4652596791573042345, "text": "LOREMsasd LOREM cosectuter LOREMaa LOREMsasd LOREMsasd fucce amet Microservices sit LOREMa sit LOREMaa cosectuter sit LOREMa", "createdAt": 1685960844000}' to topic='twitter-topic'
+2023-06-05 15:27:25 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor LOREMa massa massa dolor Java LOREMaa amet LOREMa ipsum
+2023-06-05 15:27:25 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7143525704029714340, "text": "dolor LOREMa massa massa dolor Java LOREMaa amet LOREMa ipsum", "createdAt": 1685960845000}' to topic='twitter-topic'
+2023-06-05 15:27:26 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMaa massa LOREMsasd fucce LOREMsasd dolor LOREMsasd ipsum Spring ipsum ipsum LOREM massa LOREM amet fucce
+2023-06-05 15:27:26 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 9104745528722277285, "text": "LOREMaa massa LOREMsasd fucce LOREMsasd dolor LOREMsasd ipsum Spring ipsum ipsum LOREM massa LOREM amet fucce", "createdAt": 1685960846000}' to topic='twitter-topic'
+2023-06-05 15:27:27 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor dolor amet Kafka LOREMa LOREMa
+2023-06-05 15:27:27 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2417057433140803638, "text": "dolor dolor amet Kafka LOREMa LOREMa", "createdAt": 1685960847000}' to topic='twitter-topic'
+2023-06-05 15:27:28 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet sit sit Spring cosectuter dolor
+2023-06-05 15:27:28 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2897112805681939396, "text": "amet sit sit Spring cosectuter dolor", "createdAt": 1685960848000}' to topic='twitter-topic'
+2023-06-05 15:27:29 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet LOREMaa massa LOREM sit LOREM Kafka ipsum LOREM cosectuter cosectuter dolor
+2023-06-05 15:27:29 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6162435684239156959, "text": "amet LOREMaa massa LOREM sit LOREM Kafka ipsum LOREM cosectuter cosectuter dolor", "createdAt": 1685960849000}' to topic='twitter-topic'
+2023-06-05 15:27:30 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text fucce LOREMsasd sit massa Microservices massa amet
+2023-06-05 15:27:30 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7443797589074607254, "text": "fucce LOREMsasd sit massa Microservices massa amet", "createdAt": 1685960850000}' to topic='twitter-topic'
+2023-06-05 15:27:31 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMaa LOREM amet LOREM massa dolor fucce Microservices LOREMa LOREMa massa amet fucce ipsum
+2023-06-05 15:27:31 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 864808731981819465, "text": "LOREMaa LOREM amet LOREM massa dolor fucce Microservices LOREMa LOREMa massa amet fucce ipsum", "createdAt": 1685960851000}' to topic='twitter-topic'
+2023-06-05 15:27:32 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREM fucce massa amet sit Elasticsearch massa LOREMaa fucce amet
+2023-06-05 15:27:32 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 5640350906999304681, "text": "LOREM fucce massa amet sit Elasticsearch massa LOREMaa fucce amet", "createdAt": 1685960852000}' to topic='twitter-topic'
+2023-06-05 15:27:33 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum LOREM ipsum Kafka cosectuter LOREMsasd
+2023-06-05 15:27:33 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7800374818200554737, "text": "ipsum LOREM ipsum Kafka cosectuter LOREMsasd", "createdAt": 1685960853000}' to topic='twitter-topic'
+2023-06-05 15:27:34 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa fucce LOREMsasd Java LOREM sit
+2023-06-05 15:27:34 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 247110660924545724, "text": "massa fucce LOREMsasd Java LOREM sit", "createdAt": 1685960854000}' to topic='twitter-topic'
+2023-06-05 15:27:35 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREM LOREMsasd fucce sit fucce Java sit sit sit dolor
+2023-06-05 15:27:35 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7588641618181880979, "text": "LOREM LOREMsasd fucce sit fucce Java sit sit sit dolor", "createdAt": 1685960855000}' to topic='twitter-topic'
+2023-06-05 15:27:36 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet cosectuter LOREM massa massa cosectuter LOREMaa Kafka cosectuter ipsum ipsum ipsum dolor
+2023-06-05 15:27:36 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6129925868841072079, "text": "amet cosectuter LOREM massa massa cosectuter LOREMaa Kafka cosectuter ipsum ipsum ipsum dolor", "createdAt": 1685960856000}' to topic='twitter-topic'
+2023-06-05 15:27:37 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa massa LOREMsasd amet LOREMaa LOREMsasd Elasticsearch LOREM fucce cosectuter cosectuter
+2023-06-05 15:27:37 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2650715765677477460, "text": "massa massa LOREMsasd amet LOREMaa LOREMsasd Elasticsearch LOREM fucce cosectuter cosectuter", "createdAt": 1685960857000}' to topic='twitter-topic'
+2023-06-05 15:27:38 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMa ipsum fucce sit Microservices amet LOREMsasd
+2023-06-05 15:27:38 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 5659741538478150556, "text": "LOREMa ipsum fucce sit Microservices amet LOREMsasd", "createdAt": 1685960858000}' to topic='twitter-topic'
+2023-06-05 15:27:39 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor massa massa Java dolor LOREM
+2023-06-05 15:27:39 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 3611259773328266312, "text": "dolor massa massa Java dolor LOREM", "createdAt": 1685960859000}' to topic='twitter-topic'
+2023-06-05 15:27:40 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum LOREM LOREMa LOREMaa cosectuter Microservices massa amet ipsum dolor
+2023-06-05 15:27:40 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 8011141333804391758, "text": "ipsum LOREM LOREMa LOREMaa cosectuter Microservices massa amet ipsum dolor", "createdAt": 1685960860000}' to topic='twitter-topic'
+2023-06-05 15:27:41 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMa LOREM sit LOREMsasd sit LOREM cosectuter fucce Java cosectuter ipsum ipsum LOREMaa LOREMaa sit dolor
+2023-06-05 15:27:41 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6646782643883662245, "text": "LOREMa LOREM sit LOREMsasd sit LOREM cosectuter fucce Java cosectuter ipsum ipsum LOREMaa LOREMaa sit dolor", "createdAt": 1685960861000}' to topic='twitter-topic'
+2023-06-05 15:27:42 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMsasd ipsum dolor LOREM cosectuter Microservices massa LOREM dolor dolor
+2023-06-05 15:27:42 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 26191120194185708, "text": "LOREMsasd ipsum dolor LOREM cosectuter Microservices massa LOREM dolor dolor", "createdAt": 1685960862000}' to topic='twitter-topic'
+2023-06-05 15:27:43 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMaa LOREMa LOREMa Elasticsearch ipsum dolor
+2023-06-05 15:27:43 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 966592232261292284, "text": "LOREMaa LOREMa LOREMa Elasticsearch ipsum dolor", "createdAt": 1685960863000}' to topic='twitter-topic'
+2023-06-05 15:27:44 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMaa massa LOREMsasd massa Spring LOREM LOREM
+2023-06-05 15:27:44 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 4260378483230705046, "text": "LOREMaa massa LOREMsasd massa Spring LOREM LOREM", "createdAt": 1685960864000}' to topic='twitter-topic'
+2023-06-05 15:27:45 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum LOREMa LOREM LOREMaa sit amet Spring fucce LOREMsasd amet fucce cosectuter
+2023-06-05 15:27:45 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 8812843464526803363, "text": "ipsum LOREMa LOREM LOREMaa sit amet Spring fucce LOREMsasd amet fucce cosectuter", "createdAt": 1685960865000}' to topic='twitter-topic'
+2023-06-05 15:27:46 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum LOREMaa sit LOREMaa LOREMsasd massa Elasticsearch LOREM cosectuter fucce LOREM
+2023-06-05 15:27:46 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2297343340723069229, "text": "ipsum LOREMaa sit LOREMaa LOREMsasd massa Elasticsearch LOREM cosectuter fucce LOREM", "createdAt": 1685960866000}' to topic='twitter-topic'
+2023-06-05 15:27:47 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text fucce amet massa LOREMa Kafka LOREMa fucce fucce
+2023-06-05 15:27:47 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2867587597569784867, "text": "fucce amet massa LOREMa Kafka LOREMa fucce fucce", "createdAt": 1685960867000}' to topic='twitter-topic'
+2023-06-05 15:27:48 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMaa LOREMa sit dolor Spring ipsum ipsum dolor
+2023-06-05 15:27:48 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2937585213798954183, "text": "LOREMaa LOREMa sit dolor Spring ipsum ipsum dolor", "createdAt": 1685960868000}' to topic='twitter-topic'
+2023-06-05 15:27:49 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMa ipsum LOREMaa LOREMa Microservices dolor sit fucce
+2023-06-05 15:27:49 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 1560192950450175914, "text": "LOREMa ipsum LOREMaa LOREMa Microservices dolor sit fucce", "createdAt": 1685960869000}' to topic='twitter-topic'
+2023-06-05 15:27:50 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text fucce massa LOREMa LOREM cosectuter amet LOREM Microservices LOREMa ipsum ipsum LOREMa LOREMa
+2023-06-05 15:27:50 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6358708209546464026, "text": "fucce massa LOREMa LOREM cosectuter amet LOREM Microservices LOREMa ipsum ipsum LOREMa LOREMa", "createdAt": 1685960870000}' to topic='twitter-topic'
+2023-06-05 15:27:51 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet dolor LOREMsasd LOREMaa Elasticsearch LOREMaa dolor dolor
+2023-06-05 15:27:51 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 2410330229336074947, "text": "amet dolor LOREMsasd LOREMaa Elasticsearch LOREMaa dolor dolor", "createdAt": 1685960871000}' to topic='twitter-topic'
+2023-06-05 15:27:52 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor massa LOREM LOREM ipsum LOREMa LOREMsasd LOREMaa Microservices ipsum ipsum amet massa amet LOREMaa
+2023-06-05 15:27:52 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7382588950640680683, "text": "dolor massa LOREM LOREM ipsum LOREMa LOREMsasd LOREMaa Microservices ipsum ipsum amet massa amet LOREMaa", "createdAt": 1685960872000}' to topic='twitter-topic'
+2023-06-05 15:27:53 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum sit LOREMaa LOREMa dolor ipsum Spring cosectuter amet ipsum LOREMsasd sit
+2023-06-05 15:27:53 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 9050872063863349944, "text": "ipsum sit LOREMaa LOREMa dolor ipsum Spring cosectuter amet ipsum LOREMsasd sit", "createdAt": 1685960873000}' to topic='twitter-topic'
+2023-06-05 15:27:54 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMaa sit LOREMaa ipsum Java massa LOREMa massa
+2023-06-05 15:27:54 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 3334579613223968439, "text": "LOREMaa sit LOREMaa ipsum Java massa LOREMa massa", "createdAt": 1685960874000}' to topic='twitter-topic'
+2023-06-05 15:27:55 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum LOREMa sit amet Spring fucce LOREMa LOREM
+2023-06-05 15:27:55 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7708879462714166743, "text": "ipsum LOREMa sit amet Spring fucce LOREMa LOREM", "createdAt": 1685960875000}' to topic='twitter-topic'
+2023-06-05 15:27:56 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum dolor fucce massa LOREMaa LOREMsasd Elasticsearch ipsum fucce amet LOREMa fucce
+2023-06-05 15:27:56 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 6807830514235098944, "text": "ipsum dolor fucce massa LOREMaa LOREMsasd Elasticsearch ipsum fucce amet LOREMa fucce", "createdAt": 1685960876000}' to topic='twitter-topic'
+2023-06-05 15:27:57 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor cosectuter amet LOREMaa cosectuter Microservices amet dolor LOREMsasd LOREM
+2023-06-05 15:27:57 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 8958459459598636434, "text": "dolor cosectuter amet LOREMaa cosectuter Microservices amet dolor LOREMsasd LOREM", "createdAt": 1685960877000}' to topic='twitter-topic'
+2023-06-05 15:27:58 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREMa LOREMa LOREMsasd LOREMsasd LOREMa LOREM Elasticsearch LOREMaa dolor dolor LOREM LOREM
+2023-06-05 15:27:58 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 7600060557855149307, "text": "LOREMa LOREMa LOREMsasd LOREMsasd LOREMa LOREM Elasticsearch LOREMaa dolor dolor LOREM LOREM", "createdAt": 1685960878000}' to topic='twitter-topic'
+2023-06-05 15:27:59 [pool-4-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text LOREM LOREMsasd LOREM cosectuter ipsum amet Java fucce LOREMaa massa massa
+2023-06-05 15:27:59 [pool-4-thread-1] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": -1, "id": 5700146805947360820, "text": "LOREM LOREMsasd LOREM cosectuter ipsum amet Java fucce LOREMaa massa massa", "createdAt": 1685960879000}' to topic='twitter-topic'
